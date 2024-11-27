@@ -49,5 +49,5 @@ set(dmitigr_libs_jrpc_deps base algo math rajson str)
 
 if(DMITIGR_LIBS_TESTS)
   set(dmitigr_jrpc_tests request response)
-  set(dmitigr_jrpc_tests_target_link_libraries dmitigr_base dmitigr_math dmitigr_util)
+  set(dmitigr_jrpc_tests_target_link_libraries dmitigr_base dmitigr_math)
 endif()

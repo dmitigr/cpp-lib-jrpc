@@ -15,16 +15,16 @@
 // limitations under the License.
 
 #include "../../base/assert.hpp"
+#include "../../base/diagnostic.hpp"
 #include "../../jrpc/jrpc.hpp"
 #include "../../math/interval.hpp"
-#include "../../util/diagnostic.hpp"
 
 int main()
 {
   try {
     namespace jrpc = dmitigr::jrpc;
     namespace math = dmitigr::math;
-    using dmitigr::util::with_catch;
+    using dmitigr::with_catch;
 
     // Parse request.
     {
