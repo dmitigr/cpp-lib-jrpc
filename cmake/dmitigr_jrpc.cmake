@@ -41,7 +41,7 @@ set(dmitigr_jrpc_implementations
 # Dependencies
 # ------------------------------------------------------------------------------
 
-set(dmitigr_libs_jrpc_deps base algo math rajson str)
+set(dmitigr_libs_jrpc_deps base math rajson str)
 
 # ------------------------------------------------------------------------------
 # Tests

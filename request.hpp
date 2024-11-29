@@ -17,8 +17,8 @@
 #ifndef DMITIGR_JRPC_REQUEST_HPP
 #define DMITIGR_JRPC_REQUEST_HPP
 
-#include "../algo/tuple.hpp"
 #include "../base/assert.hpp"
+#include "../base/tuple.hpp"
 #include "../math/interval.hpp"
 #include "../str/predicate.hpp"
 #include "exceptions.hpp"
@@ -453,7 +453,7 @@ public:
   auto parameters_mandatory(Types&& ... names) const
   {
     auto result = parameters(std::forward<Types>(names)...);
-    if (!algo::is_all_of(result, [](const auto& e){return e.is_valid();}))
+    if (!is_all_of(result, [](const auto& e){return e.is_valid();}))
       throw_error(Server_errc::invalid_params);
     return result;
   }
@@ -470,7 +470,7 @@ public:
   auto parameters_not_null(Types&& ... names) const
   {
     auto result = parameters(std::forward<Types>(names)...);
-    if (!algo::is_all_of(result, [](const auto& e){return e.value();}))
+    if (!is_all_of(result, [](const auto& e){return e.value();}))
       throw_error(Server_errc::invalid_params);
     return result;
   }
