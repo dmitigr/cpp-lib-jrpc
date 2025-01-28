@@ -17,8 +17,8 @@
 #ifndef DMITIGR_JRPC_REQUEST_HPP
 #define DMITIGR_JRPC_REQUEST_HPP
 
+#include "../base/algorithm.hpp"
 #include "../base/assert.hpp"
-#include "../base/tuple.hpp"
 #include "../math/interval.hpp"
 #include "../str/predicate.hpp"
 #include "exceptions.hpp"

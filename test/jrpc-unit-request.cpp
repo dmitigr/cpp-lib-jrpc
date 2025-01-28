@@ -15,7 +15,7 @@
 // limitations under the License.
 
 #include "../../base/assert.hpp"
-#include "../../base/diagnostic.hpp"
+#include "../../base/utility.hpp"
 #include "../../jrpc/jrpc.hpp"
 #include "../../math/interval.hpp"
 
